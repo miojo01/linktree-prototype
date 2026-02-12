@@ -12,6 +12,7 @@
             <div class="logo">
                 <img src="public/perfil.png" alt="logo">
             </div>
+            <h3 class="nome-user">@seunome</h3>
         </div>
         <div class="btns">
             <button class="whatsapp-button">Whatsapp</button>
@@ -19,13 +20,29 @@
             <button class="instagram-button">Instagram</button>
         </div>
         <div class="social-btns">
-            <button class="instragam-icon">
-
+            <button class="instagram-icon">
+                <img src="public/instagram.svg" alt="Ícone Instagram" width="50" height="50">
             </button>
             <button class="facebook-icon">
-
+                <img src="public/facebook.svg" alt="Ícone Facebook" width="50" height="50">
             </button>
         </div>
     </div>
+
+    <script type="text/javascript">
+        //Botão Facebook
+        const btnFacebook = document.querySelector('.facebook-icon');
+
+        btnFacebook.addEventListener('click', () => {
+            window.open("https://www.facebook.com/", "_blank");
+        });
+
+        //Botão Instagram
+        const btnInstagram = document.querySelector('.instagram-icon');
+
+        btnInstagram.addEventListener('click', () => {
+            window.open("https://www.instagram.com/", "_blank");
+        });
+    </script>
 </body>
 </html>

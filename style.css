@@ -1,49 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* 2. Configurações de Root (HTML e Body) */
+html, body {
+  width: 100%;
+  min-height: 100vh; /* Garante que o body ocupe a tela toda mesmo sem conteúdo */
+  font-family: 'Google Sans', sans-serif; /* Ou sua fonte preferida */
+  -webkit-font-smoothing: antialiased; /* Deixa as fontes mais nítidas */
+}
+
+/* 3. Imagens Responsivas */
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 1000px;
     height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                linear-gradient(180deg, rgba(47, 121, 150, 1) 0%, rgba(87, 201, 194, 1) 100%);
 }
 
 .header {
     margin: 0;
     padding: 0;
-    border-radius: 50%;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
     height: 80%;
-    width: 280px;
+    width: 25rem;
     padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    background: linear-gradient(180deg, rgba(47, 121, 150, 1) 0%, rgba(87, 201, 194, 1) 100%);
 }
 
 .logo img {
-    width: 100px;
+    width: 9rem;
 }
 
 .btns {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .btns button {
-    width: 12rem;
-    height: 3rem;
+    width: 17rem;
+    height: 4rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Google Sans', sans-serif;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btns button:hover {
+    transform: translateY(-3px); /* Sobe um pouquinho */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .instagram-button {
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .store-button {
-    margin-top: 10px;
+    margin-top: 25px;
 }
+
+.social-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 17rem;
+    height: 4rem;
+    transition: transform 0.2s
+}
+
+.social-btns button {
+    cursor: pointer;
+    border-radius: 40%;
+    transition: transform 0.3s;
+}
+
+.social-btns button:hover {
+    transform: translateY(-2px);
+}
+
+.social-btns button:active {
+    transform: scale(0.90);
+}
+
+.instagram-icon {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.facebook-icon {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
