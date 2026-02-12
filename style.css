@@ -7,6 +7,13 @@ body {
     height: 100vh;
 }
 
+.header {
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -14,5 +21,29 @@ body {
     align-items: center;
     border: 1px solid red;
     height: 80%;
-    width: 20%;
+    width: 280px;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.btns button {
+    width: 12rem;
+    height: 3rem;
+}
+
+.instagram-button {
+    margin-top: 10px;
+}
+
+.store-button {
+    margin-top: 10px;
 }
